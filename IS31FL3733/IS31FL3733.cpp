@@ -57,7 +57,7 @@ void IS31FL3733::init()
 
 void IS31FL3733::setCurrent()
 {
-    write_paged_reg(0x03, 0x01, 127);
+    write_paged_reg(0x03, 0x01, 255);
 }
 
 bool IS31FL3733::checkConnectivity()
